@@ -6,7 +6,7 @@
  * Returns: floating-point number
  */
 function htmlToNumber($numberUnsanitized) {
-  $number = strip_tags($numberUnsanitized);
+	$number = strip_tags($numberUnsanitized);
 	$number = trim($number);
 	$number = preg_replace('/,/', '', $number);
 	$number = preg_replace('/%/', '', $number);
